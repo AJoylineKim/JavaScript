@@ -12,6 +12,17 @@
 document.getElementById("myButton").addEventListener("click", function() {
     document.getElementById("message").textContent = "You clicked the button!";
 });
+
+let score = 0;
+const button = document.getElementById("mybutton");
+const container = document.getElementById("container");
+
+button.addEventListener("click", function(){ 
+  score= score +1
+ container.textContent = score;
+});
+
+      
       var button = document.querySelector("button");
 
 button.addEventListener("click", function() {
